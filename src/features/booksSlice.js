@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const PREFIX_URL = "http://localhost:3000/books";
+const PREFIX_URL = "https://rps-1-backend.vercel.app/books";
 
 export const fetchBooks = createAsyncThunk("books/fetchBooks", async () => {
   const response = await axios.get(PREFIX_URL);
